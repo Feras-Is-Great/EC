@@ -1,0 +1,186 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2e6f7;
+}
+
+.TopSection {
+  position: relative;
+  margin: 0;
+  padding: 75px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.TopSection i {
+  font-size: 50px;
+
+}
+
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  position: relative;
+  width: 300px;
+  height: 355px;
+  background: #14181f;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #e2e6f7;
+  transform: skewY(345deg);
+  transition: 0.5s;
+  -webkit-transform: skewY(345deg);
+  -moz-transform: skewY(345deg);
+  -ms-transform: skewY(345deg);
+  -o-transform: skewY(345deg);
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+  -webkit-transform: skewY(390deg);
+  -moz-transform: skewY(390deg);
+  -ms-transform: skewY(390deg);
+  -o-transform: skewY(390deg);
+}
+
+.card::after {
+  content: "CAMERA";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 4.5em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  z-index: 1;
+}
+
+
+
+
+
+.card:hover .imgBox img {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.card .imgBox img {
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+
+/* .card .imgBox img {
+    max-width: 100%;
+
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+
+} */
+
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  font-size: 15px;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 10px;
+  margin: 5px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #e2e6f7;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 200px;
+  width: auto;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.toCartandRemoveButtonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.toCartandRemoveButtonsContainer .buy {
+  display: flex;
+  align-items: center;
+}

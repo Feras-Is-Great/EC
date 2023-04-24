@@ -1,0 +1,91 @@
+<div class="backToHomePage">
+  <a routerLink="/Home" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-home"></i></a>
+</div>
+
+<div class="login-box" id="login_box1">
+  <p>Sign Up</p>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required>
+      <label>First Name</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="">
+      <label>Middle Name (*Optional*)</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="" required>
+      <label>LastName</label>
+    </div>
+    <div class="NewAccount">
+      <p>Already have an account? <a routerLink="/Login" routerLinkActive="active" ariaCurrentWhenActive="page" id = "signUpButton"> Sign In
+          Now </a></p>
+    </div>
+    <div class="glowingButtonsContainer">
+      <div class="glowingButton">
+        <a onclick="ShowNextInfos();" id="firstGlowingButton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Next
+        </a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Next Page -->
+
+<div class="login-box" id="login_box2">
+  <p>Sign Up</p>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required>
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="UserEmail" required>
+      <label>E-mail Address</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="" id="id_password" required>
+      <label>
+        Password
+      </label>
+      <i class="fa fa-eye" id="togglePassword"></i>
+    </div>
+    <div class="user-box">
+      <input type="password" name="" id="id_password" required>
+      <label>
+        Repeat Password
+      </label>
+      <i class="fa fa-eye" id="togglePassword"></i>
+    </div>
+    <div class="NewAccount">
+      <p>Already have an account? <a routerLink="/SignIn" routerLinkActive="active" ariaCurrentWhenActive="page"> Sign
+          In
+          Now </a></p>
+    </div>
+    <div class="glowingButtonsContainer">
+      <div class="glowingButton">
+        <a onclick="ValidateEmail(document.UserEmail);" id="SignUpButton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Sign Up
+        </a>
+      </div>
+      <div class="glowingButton">
+        <a onclick="showPrevInfos();">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Previous
+        </a>
+      </div>
+    </div>
+  </form>
+</div>

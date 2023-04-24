@@ -1,0 +1,54 @@
+    <div class="MainContainer">
+      <label>
+        <input id="radioForDelivery" type="radio" name="colorRadio" value="Cash On Delivery"> Cash On Delivery</label>
+      <label>
+        <input id="radioForCreditCard" type="radio" name="colorRadio" value="Credit Card"> Credit Card</label>
+      <label>
+        <input id="radioForPaypal" type="radio" name="colorRadio" value="Paypal"> Paypal</label>
+    </div>
+    <div class="Forms">
+      <div class="FormDetails" id="FormForDelivery">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+
+        <label for="city">City: </label>
+        <input type="text" id="city" name="city">
+
+        <label for="street">Street: </label>
+        <input type="text" id="street" name="street">
+
+        <label for="phoneNum">Phone Number: </label>
+        <input type="text" id="phoneNum" name="phoneNum">
+
+        <div class="submitResetButtons">
+          <input type="submit" onclick="submission()" value="Submit">
+          <input type="reset" value="Clear">
+        </div>
+      </div>
+      <div class="FormDetails" id="FormForCreditCard">
+        <label for="nameOnCard">Name On Card: </label>
+        <input type="text" id="nameOnCard" name="nameOnCard">
+
+        <label for="CCNumber">Credit Card Number:</label>
+        <input type="text" id="CCNumber" name="CCNumber">
+
+        <label for="CCV">CCV: </label>
+        <input type="text" id="CCV" name="CCV">
+
+        <label for="ExpDate">Expiration Date: </label>
+        <input type="date" id="ExpDate" name="ExpDate">
+
+        <div class="submitResetButtons">
+          <input type="submit" onclick="submission()" value="Submit">
+          <input type="reset" value="Clear">
+        </div>
+      </div>
+      <div class="FormDetails" id="FormForPaypal">
+        <a href="https://www.paypal.com/signin">
+          Go To Paypal
+        </a>
+      </div>
+    </div>

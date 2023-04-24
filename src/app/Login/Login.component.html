@@ -1,0 +1,35 @@
+<div class="backToHomePage">
+  <a routerLink="/Home" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-home"></i></a>
+</div>
+
+<div class="login-box" id="zzzzzz">
+  <p>Sign In</p>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required>
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="" id="id_password" required>
+      <label>
+        Password
+      </label>
+      <i class="fa fa-eye" id="togglePassword"></i>
+    </div>
+    <div class="NewAccount">
+      <p>Don't have an account yet? <a routerLink="/SignUp" routerLinkActive="active" ariaCurrentWhenActive="page">
+          Create one now.</a></p>
+    </div>
+    <div class="glowingButtonsContainer">
+      <div class="glowingButton">
+        <a onclick="routeToHome()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Sign In
+        </a>
+      </div>
+    </div>
+  </form>
+</div>

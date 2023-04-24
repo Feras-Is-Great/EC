@@ -1,0 +1,58 @@
+.PersonalPageContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu {
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: -1px 0px 11px -5px #a3a3a3;
+  background: whitesmoke;
+  transition: 0.3s ease;
+  visibility: visible;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.menu ul li.UserMenuOptions {
+  margin-top: 5px;
+  font-weight: 500;
+  border: none;
+}
+
+.UserMenuOptions:hover a {
+  color: rgb(174, 210, 226);
+}
+
+.profile-icon .menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3em;
+  color: #555;
+}
+
+.UserEmail {
+  font-size: 14px;
+  color: #cecece;
+}
+
+.UserMenuOptions a {
+  font-size: 16px;
+  color: #558;
+  transition: 0.5s;
+}
+
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
